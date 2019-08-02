@@ -25,7 +25,7 @@ services:
   app:
     depends_on:
       - app_db
-    image: "kidunot89/woographql-app:wp${WP_VERSION:-5.2.2}-php${PHP_VERSION:-7.2}"
+    image: "kidunot89/ql-events-app:wp${WP_VERSION:-5.2.2}-php${PHP_VERSION:-7.2}"
     volumes:
       - '.:/var/www/html/wp-content/plugins/ql-events'
       - './.log/app:/var/log/apache2'
